@@ -1,7 +1,12 @@
 *{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+body{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+background-color: white;
+}
 .nav{ background-color: crimson; padding: 3rem;}
 
 .nav__brand, 
@@ -9,6 +14,9 @@ body{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
 .nav__list{
   display: inline-block;
 }
+.nav__brand
+{font-size: 3rem;}
+/* ------------- nav ----------*/
 .nav{
   display: flex; justify-content: space-between 
 }
@@ -39,6 +47,84 @@ body{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
   display: flex; justify-content: start;}
 .nav__brand a{color: white;}
 .nav__item--current a{
-  color: gray ;
   pointer-events: none;
+  color: crimson ;
+  
+}
+/* -------------- Banner --------- */
+
+.banner{
+  background-image: url(../BRANDON\ ORTEGA_CURSO_CSS_ACADEMIND/img/chris.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner__nav{
+position: absolute;
+top: 50%;
+transform: translate(0,-50%);
+width: calc(100%-2rem);
+display: flex;
+justify-content: space-between;
+margin-left: 1rem;
+margin-right: 1rem;
+}
+ /* .banner__nav-prev{
+  top: 50%;
+  font-size: 3rem;
+  display: inline-block;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(0,-50%);
+ } .banner__nav-next{
+  top: 50%;
+   font-size: 3rem;
+   display: inline-block;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   transform: translate(0,-50%);
+ } */
+.banner__info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+  width: max-content;
+  padding: 2rem;
+  color: white;
+}
+.banner__info h2{
+  font-size: 5rem;
+}
+.banner__info h1,.banner__info h3 {font-style: italic;}
+/* ----targetas---- */
+
+.nuevo{
+  text-align: center;
+  max-width: 55rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nuevo__item{
+  background-color: crimson;
+  display: inline-block;
+  width: 28%;
+  height: 20rem;
+  margin: 2%;
+  padding: 2rem;
+ box-shadow: 2px .5rem .5rem rgba(0, 0, 0, .5);
+ transition: all .3s ease-out;
+}
+.nuevo__item h2{
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.nuevo__item:hover{
+  transform: scale(1.05);
+  box-shadow: 0px .1rem .1rem rgba(0, 0, 0, .2);
 }
