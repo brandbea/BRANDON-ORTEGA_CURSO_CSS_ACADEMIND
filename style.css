@@ -128,3 +128,19 @@ margin-right: 1rem;
   transform: scale(1.05);
   box-shadow: 0px .1rem .1rem rgba(0, 0, 0, .2);
 }
+@media screen and ( max-width: 49rem ) {
+  .nuevo__item{
+    width: 90%;
+    height: 10rem;
+  }
+}
+@media screen and ( max-width: 49rem ){
+  .banner{
+  background-image: url(../BRANDON\ ORTEGA_CURSO_CSS_ACADEMIND/img/cris2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+}
