@@ -54,7 +54,7 @@ background-color: white;
 /* -------------- Banner --------- */
 
 .banner{
-  background-image: url(../BRANDON\ ORTEGA_CURSO_CSS_ACADEMIND/img/chris.jpg);
+  background-image: url(/img/chris.jpg);
   background-position: center;
   background-size: cover;
   height: 60vh;
@@ -105,38 +105,52 @@ margin-right: 1rem;
 /* ----targetas---- */
 
 .nuevo{
-  text-align: center;
-  max-width: 55rem;
-  margin-left: auto;
-  margin-right: auto;
+  
+ display: flex;
+  flex-basis: 5rem;
+  flex-flow: wrap;
+padding: 2rem;
+text-align: center;
+ align-items: center;
+
+  
+ 
 }
 .nuevo__item{
   background-color: crimson;
-  display: inline-block;
+  display: flex;
+  flex-flow: wrap;
   width: 28%;
-  height: 20rem;
+  height: auto;
+  gap: 2rem;
   margin: 2%;
   padding: 2rem;
- box-shadow: 2px .5rem .5rem rgba(0, 0, 0, .5);
  transition: all .3s ease-out;
+ justify-content: center; 
 }
 .nuevo__item h2{
+  text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
 }
 .nuevo__item:hover{
   transform: scale(1.05);
   box-shadow: 0px .1rem .1rem rgba(0, 0, 0, .2);
+  flex-grow: 3rem;
 }
 @media screen and ( max-width: 49rem ) {
   .nuevo__item{
     width: 90%;
-    height: 10rem;
+    height: auto;
+    padding: auto;
+  
   }
+ 
+  
 }
 @media screen and ( max-width: 49rem ){
   .banner{
-  background-image: url(../BRANDON\ ORTEGA_CURSO_CSS_ACADEMIND/img/cris2.jpg);
+  background-image: url(/img/cris2.jpg);
   background-position: center;
   background-size: cover;
   height: 60vh;
